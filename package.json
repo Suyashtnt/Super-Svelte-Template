@@ -1,0 +1,108 @@
+{
+  "name": "boilerplate-svelte",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/svelte": "^5.3.18",
+    "@sveltech/routify": "^1.9.2",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/svelte": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "file-loader": "^6.0.0",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "jest-dom": "^4.0.0",
+    "jest-transform-svelte": "^2.1.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0",
+    "sass-loader": "^8.0.2",
+    "serve": "^11.3.0",
+    "style-loader": "^1.1.3",
+    "svelte": "^3.20.1",
+    "svelte-loader": "^2.13.6",
+    "svelte-material-ui": "^1.0.0-beta.21",
+    "svelte-preprocess": "^3.4.0",
+    "svelte-test": "^0.4.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.svelte$": "jest-transform-svelte"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "svelte"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint:eslint && yarn lint:prettier"
+    }
+  },
+  "setupFilesAfterEnv": [
+    "@testing-library/jest-dom/extend-expect"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "routify -c dev-noroute",
+    "dev-noroute": "webpack-dev-server --content-base public",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "format": "npm-run-all -c format:*",
+    "format:eslint": "eslint --fix **/*.{js,ts}",
+    "format:prettier": "prettier --write **/*.{js,ts,svelte,json,md,css}",
+    "lint": "npm-run-all -c lint:*",
+    "lint:eslint": "eslint '**/*.{js,ts}'",
+    "lint:prettier": "prettier --check '**/*.{js,ts,json,md,css}'",
+    "test": "jest src --passWithNoTests --coverage",
+    "test:watch": "npm run test -- --watch"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.1.0",
+    "svelte-routing": "^1.4.2"
+  },
+  "description": "Boilerplate Svelte Javascript Framework",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusID/boilerplate-svelte.git"
+  },
+  "author": "Dwi Agustianto <dwi.agustianto@ralali.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agusID/boilerplate-svelte/issues"
+  },
+  "homepage": "https://github.com/agusID/boilerplate-svelte#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "Boilerplate",
+    "Svelte",
+    "Javascript"
+  ]
+}
