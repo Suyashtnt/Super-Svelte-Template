@@ -7,7 +7,7 @@ This is a boilerplate project for [Svelte](https://svelte.dev) apps.
 To create a new project based on this boilerplate using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit agusID/boilerplate-svelte boilerplate-svelte
+npx degit Suyashtnt/Super-Svelte-Template boilerplate-svelte
 cd boilerplate-svelte
 ```
 
@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running.
+Navigate to [localhost:3000](http://localhost:3000). You should see your app running.
 
 ## Deploying to the web
 
@@ -50,24 +50,13 @@ As an alternative, use the [Now desktop client](https://zeit.co/download) and si
 
 ## Guides
 
-- [Storybook](https://github.com/agusID/boilerplate-svelte/blob/master/docs/storybook.md)
+- [Storybook](https://github.com/Suyashtnt/Super-Svelte-Template/blob/master/docs/storybook.md)
 - [Svelte](https://svelte.dev/tutorial/basics)
-- [Testing](https://github.com/agusID/boilerplate-svelte/blob/master/docs/testing.md)
+- [Testing](https://github.com/Suyashtnt/Super-Svelte-Templateblob/master/docs/testing.md)
 
 ## Contributing
 
-Please to read the [Contributing Guidelines](https://github.com/agusID/boilerplate-svelte/blob/master/docs/contributing.md).
-
-## Any question ?
-
-Send message to
-mail@agusdwi.id
-
-<p>
-  <a href="https://github.com/agusID"><img 
-  width="50" style="border-radius: 50%" src="https://avatars3.githubusercontent.com/u/13955708?s=460&v=4" alt="Dwi Agustianto">
-  </a>
-</p>
+Please to read the [Contributing Guidelines](https://github.com/Suyashtnt/Super-Svelte-Templateblob/blob/master/docs/contributing.md).
 
 ## License
 
